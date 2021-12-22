@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<!--*********** Head *****************-->
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<title> Contact </title>
+<style>
+
+body{
+margin:0;
+font-family: 'Josefin Sans', sans-serif;
+}
+ 
+/*.....................navigation bar......................*/
+.nav{
+border-top:15px groove #4E4941;
+border-bottom:15px ridge #4E4941;
+border-left: 4px solid black;
+border-right: 4px solid black;
+}
+
+.nav ul{
+list-style:none;
+}
+
+.nav li{
+display:inline-block;padding:20px;
+}
+
+.nav li a{
+color:black;
+}
+
+.contactform{
+background:lightgrey;
+width:900px;
+margin:0 auto;
+padding:40px;
+border-radius:5px;
+}
+
+.firstform{
+width:100%;
+padding:12px;
+border:1px solid #03045E;
+border-radius:4px;
+}
+
+.firstsub{
+background: #03045E;
+color:white;
+border:none;
+width:100%;
+padding:12px 20px;
+font-weight:bold;
+font-size:18px;
+border-radius:4px;
+cursor:pointer;
+}
+
+textarea{
+resize:none;
+}
+
+
+footer{
+background:lightgrey
+}
+
+.subscribe{
+display:inline-block;
+width:30%;
+padding:20px;
+}
+
+.links{
+display:inline-block;
+width:50%;
+text-align:center;
+padding-top:30px;
+}
+
+.links ul{
+word-spacing:40px;
+list-style:none;
+}
+
+.links li a{
+color:black;
+}
+
+.copy{
+padding:20px;
+}
+
+.secform
+{
+background:grey;
+width:70%;
+padding:12px;
+border:1px solid #ccc;
+}
+
+input[type = SUBMIT]
+{
+background:#2E3338;
+color:white;
+border-left:none;
+border-right:none;
+border-top:none;
+border-bottom:2px solid black;
+cursor:pointer;
+padding:8px 10px;
+font-size:20px;
+}
+
+
+</style>
+</head>
+<!--*********** Body *****************-->
+<body>
+<!--*********** Header *****************-->
+<header>
+<!--*********************navigation***********************-->
+<section class="nav">
+<ul>
+<li> <a href="index.html">Home</a> </li>
+<li> <a href="places.html">Places to visi</a>t </li>
+<li> <a href="activities.html">Things to do</a> </li>
+<li> <a href="eatery.html">Eateries</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+
+</ul>
+</section>
+
+</header>
+
+<!--*********** Main *****************-->
+<main style="padding:8px;">
+
+<!--*********** Form *****************-->
+<div class = "contactform">
+<center><h2>Write a Review !</h2></center>
+<form name="Contactform" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScR1zS8_8YQwry32z1IPt0GR_jX9R7KNznVsNKgBJ3ivsNBzA/formResponse" method="POST">
+
+<label> Name
+<input class = "firstform" type="text" name="entry.1392790115" required>
+</label>
+<br>
+<br>
+
+<label> Email
+<input class = "firstform" type="email" name="entry.598665746" required placeholder="me@example.com">
+</label>
+<br>
+<br>
+
+<label> Review
+<textarea class = "firstform" name="entry.158142571" required placeholder="Write a review" cols="20" rows="10"></textarea>
+</label>
+<br>
+<br>
+<input class = "firstform firstsub" type="Submit" onclick="return check(this.form)" value="Submit">
+</form>
+</div>
+
+</main>
+
+<!--*********** Footer *****************-->
+
+<footer>
+<section class="subscribe">
+<form name="newsletter" action="" method="POST">
+<label>Join Our News Letter
+<input class= "secform" name="entry."type="email" required placeholder="me@example.com">
+</label>
+<input type="SUBMIT" onclick="return check (this.form)" value="join">
+</form>
+</section>
+
+<section class="links">
+<ul style="line-height:2;">
+
+<li> <a href="contact.html">Contact</a> </li>
+<li> <a href="places.html">Attractions</a> </li>
+<li> <a href="activities.html">Activities</a> </li>
+<li> <a href="eatery.html">Eateries</a> </li>
+
+</ul>
+</section>
+
+<section class="copy">
+&copy;Shlok 2021
+</section>
+
+</footer>
+</body>
+</html>

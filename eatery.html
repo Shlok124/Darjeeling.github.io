@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+<!--*********************Head***********************-->
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<!--*********************CSS***********************-->
+<style>
+/*.....................body......................*/
+
+body{
+margin:0;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+/*.....................header......................*/
+
+/*.....................navigation bar......................*/
+.nav{
+border-top:15px groove #4E4941;
+border-bottom:15px ridge #4E4941;
+border-left: 4px solid black;
+border-right: 4px solid black;
+}
+
+.nav ul{
+list-style:none;
+}
+
+.nav li{
+display:inline-block;padding:20px;
+}
+
+.nav li a{
+color:black;
+}
+
+/*.....................background......................*/
+.bannerContainer img{
+width:100%;
+height:300px;
+}
+
+.bannerContainer{
+position:relative;
+}
+
+.bannertext{
+text-align:center;
+color:white;
+background:rgba(11, 0, 51, 0.5);
+width:325px;
+height:150;
+position:absolute;
+bottom:100px;
+left:300px;
+}
+
+/*.....................main......................*/
+
+.main{
+padding:20px;
+}
+
+.places{
+max-width:90%;
+margin:0 auto;
+}
+
+.placesshadow{
+font-size:15px;
+border-bottom:2px dotted black;
+overflow:hidden;
+padding:60px 0;
+}
+
+.placesshadow img{
+float:left;
+margin-right:20px;
+}
+
+
+
+footer{
+background:lightgrey
+}
+
+.subscribe{
+display:inline-block;
+width:30%;
+padding:20px;
+}
+
+.links{
+display:inline-block;
+width:50%;
+text-align:center;
+padding-top:30px;
+}
+
+.links ul{
+word-spacing:40px;
+list-style:none;
+}
+
+.links li a{
+color:black;
+}
+
+.copy{
+padding:20px;
+}
+
+input[type = email]
+{
+background:grey;
+width:70%;
+padding:12px;
+border:1px solid #ccc;
+}
+
+input[type = SUBMIT]
+{
+background:#2E3338;
+color:white;
+border-left:none;
+border-right:none;
+border-top:none;
+border-bottom:2px solid black;
+cursor:pointer;
+padding:8px 10px;
+font-size:20px;
+}
+
+</style>
+</head>
+
+<!--*********************Body***********************-->
+<body>
+<!--**************** position relative absolute ******************** -->
+
+<header>
+<!--*********************navigation***********************-->
+<section class="nav">
+<ul>
+<li> <a href="index.html">Home</a> </li>
+<li> <a href="places.html">Places to visi</a>t </li>
+<li> <a href="activities.html">Things to do</a> </li>
+<li> <a href="eatery.html">Eateries</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+
+</ul>
+</section>
+
+</header>
+<!--*********************main***********************-->
+<main>
+<!--*********************banner***********************-->
+<section class="bannerContainer">
+<img src ="DarjeelingCollage.jpg"/>
+
+	<section class="bannertext">
+	<h2> Popular Places To Eat </h2>
+
+	</section>
+
+</section>
+<!--*********************main section***********************-->
+<div class="main">
+
+<!--*********************places***********************-->
+
+<section class="places">
+
+<h2 style="text-align:center;">Popular Places To Eat</h2>
+
+<!--*********************places image 1***********************-->
+
+<section class="placesshadow">
+<img src="glenarys.jpg" alt="Glenarys" width="300" height="300">
+
+
+<h2> Glenarys </h2>
+<p>
+The bakery and restaurant were originally named Vado after its Italian owner and later Pliva.
+ After the independence, it was bought by a Patna-based family . In 1959 the Late A. T. Edwards,
+a Darjeeling local working there since 1945, was offered the role of manager. His family later 
+bought the property. The family decided to renovate the place and start the restaurant in a new manner.
+The task was definitely not easy, but the Edwards never gave up. He changed the name to Glenary’s but 
+kept the spirit of the place the same. In fact, the family still has the list of the first day’s sale which
+amounted to Rs.396.00!
+</p>
+
+</section>
+
+<!--*********************places image 2***********************-->
+
+<section class="placesshadow">
+<img src="kunga.jpg" alt="Kunga" width="300" height="300">
+
+
+<h2> Kunga </h2>
+<p>
+A place zto eat tibetan food and chinese food for a cheap price
+located at chowrasta and is popular for momo's chowmien soup etc.
+</p>
+
+</section>
+
+<!--*********************places image 3***********************-->
+
+<section class="placesshadow">
+<img src="nepalichulo.jpg" alt="Neplai Chulo" width="300" height="300">
+
+
+<h2> Neplai  Chulo </h2>
+<p>
+A Wonderful place to eat with the real taste of nepali food with great service and comfortable ambience.
+At Ladenla Road Mahakal Market , where we get a variety of different momo's , chowien, tea etc.
+and authentic nepalese food and thakali and curries. which is open 11 to 7.
+
+</p>
+</section>
+
+</section>
+
+
+</div>
+</main>
+<!--****************footer******************** -->
+
+
+<footer>
+<section class="subscribe">
+<form name="newsletter" action="" method="POST">
+<label>Join Our News Letter
+<input name="entry."type="email" required placeholder="me@example.com">
+</label>
+<input type="SUBMIT" onclick="return check (this.form)" value="join">
+</form>
+</section>
+
+<section class="links">
+<ul style="line-height:2;">
+<li> <a href="contact.html">Contact</a> </li>
+<li> <a href="places.html">Attractions</a> </li>
+<li> <a href="activities.html">Activities</a> </li>
+<li> <a href="eatery.html">Eateries</a> </li>
+
+</ul>
+</section>
+
+<section class="copy">
+&copy;Shlok 2021
+</section>
+
+</footer>
+
+</body>
+
+</html>

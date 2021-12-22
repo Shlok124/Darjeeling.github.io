@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html>
+<!--*********************Head***********************-->
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<!--*********************CSS***********************-->
+<style>
+/*.....................body......................*/
+
+body{
+margin:0;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+/*.....................header......................*/
+
+/*.....................navigation bar......................*/
+.nav{
+border-top:15px groove #4E4941;
+border-bottom:15px ridge #4E4941;
+border-left: 4px solid black;
+border-right: 4px solid black;
+}
+
+.nav ul{
+list-style:none;
+}
+
+.nav li{
+display:inline-block;padding:20px;
+}
+
+.nav li a{
+color:black;
+}
+
+/*.....................background......................*/
+.bannerContainer img{
+width:100%;
+height:300px;
+}
+
+.bannerContainer{
+position:relative;
+}
+
+.bannertext{
+text-align:center;
+color:white;
+background:rgba(11, 0, 51, 0.5);
+width:325px;
+height:150;
+position:absolute;
+bottom:100px;
+left:300px;
+}
+
+/*.....................main......................*/
+
+.main{
+padding:20px;
+}
+
+.places{
+max-width:90%;
+margin:0 auto;
+}
+
+.placesshadow{
+font-size:15px;
+border-bottom:2px dotted black;
+overflow:hidden;
+padding:60px 0;
+}
+
+.placesshadow img{
+float:left;
+margin-right:20px;
+}
+
+
+
+footer{
+background:lightgrey
+}
+
+.subscribe{
+display:inline-block;
+width:30%;
+padding:20px;
+}
+
+.links{
+display:inline-block;
+width:50%;
+text-align:center;
+padding-top:30px;
+}
+
+.links ul{
+word-spacing:40px;
+list-style:none;
+}
+
+.links li a{
+color:black;
+}
+
+.copy{
+padding:20px;
+}
+
+input[type = email]
+{
+background:grey;
+width:70%;
+padding:12px;
+border:1px solid #ccc;
+}
+
+input[type = SUBMIT]
+{
+background:#2E3338;
+color:white;
+border-left:none;
+border-right:none;
+border-top:none;
+border-bottom:2px solid black;
+cursor:pointer;
+padding:8px 10px;
+font-size:20px;
+}
+
+</style>
+</head>
+
+<!--*********************Body***********************-->
+<body>
+<!--**************** position relative absolute ******************** -->
+
+<header>
+<!--*********************navigation***********************-->
+<section class="nav">
+<ul>
+<li> <a href="index.html">Home</a> </li>
+<li> <a href="places.html">Places to visi</a>t </li>
+<li> <a href="activities.html">Things to do</a> </li>
+<li> <a href="eatery.html">Eateries</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+
+</ul>
+</section>
+
+</header>
+<!--*********************main***********************-->
+<main>
+<!--*********************banner***********************-->
+<section class="bannerContainer">
+<img src ="DarjeelingCollage.jpg"/>
+
+	<section class="bannertext">
+	<h2> Places TO Visit </h2>
+
+	</section>
+
+</section>
+<!--*********************main section***********************-->
+<div class="main">
+
+<!--*********************places***********************-->
+
+<section class="places">
+
+<h2 style="text-align: center;">Famous Places To Visit</h2>
+
+<!--*********************places image 1***********************-->
+
+<section class="placesshadow">
+<img src="ropeway.jpg" alt="ropeway" width="300" height="300">
+
+
+<h2> Rope Way </h2>
+<p>
+Darjeeling Ropeway started in 1986 and is the first cabel car system in India.
+It was initially set up to cater to the tea gardens at the valleys below which 
+did not otherwise have an easy access. Starting with just one cable car or gondola,
+it was upgraded to accomodate 16 cable cars having a capacity of six persons. 
+</p>
+
+</section>
+
+<!--*********************places image 2***********************-->
+
+<section class="placesshadow">
+<img src="station.jpg" alt="toytrain" width="300" height="300">
+
+
+<h2> Toy Train </h2>
+<p>
+The Darjeeling Himalayan Railway,also know as DHR or the toy train,is a 2ft 
+gauge railway that runs between New Jalpaiguri and Darjeeling in the Indian state of
+West Bengal.Built between 1879 and 1881, it is about 88km long.It operates from Darjeeling 
+Railway Station.It's roughly a 2 hour trip from Darjeeling to Ghum and back via Bastasia Loop. 
+</p>
+
+</section>
+
+<!--*********************places image 3***********************-->
+
+<section class="placesshadow">
+<img src="peacepagoda.jpg" alt="peacepagoda" width="300" height="300">
+
+
+<h2> Peace Pagoda </h2>
+<p>
+Peace Pagoda, Darjeeling or Darjeeling Peace Pagoda is one of the Peace Pagodas designed to provide 
+a focus for people of all races and creeds to help unite them in their search for world peace. 
+It is located in the town of Darjeeling in the Indian state of West Bengal. Like most of the other Peace Pagodas, 
+it was built under the guidance of Nichidatsu Fujii (1885–1985), a Buddhist monk from Japan and founder of the Nipponzan-Myōhōji 
+Buddhist Order.
+</p>
+</section>
+
+</section>
+
+
+</div>
+</main>
+<!--****************footer******************** -->
+
+
+<footer>
+<section class="subscribe">
+<form name="newsletter" action="" method="POST">
+<label>Join Our News Letter
+<input name="entry."type="email" required placeholder="me@example.com">
+</label>
+<input type="SUBMIT" onclick="return check (this.form)" value="join">
+</form>
+</section>
+
+<section class="links">
+<ul style="line-height:2;">
+<li> <a href="contact.html">Contact</a> </li>
+<li> <a href="places.html">Attractions</a> </li>
+<li> <a href="activities.html">Activities</a> </li>
+<li> <a href="eatery.html">Eateries</a> </li>
+
+</ul>
+</section>
+
+<section class="copy">
+&copy;Shlok 2021
+</section>
+
+</footer>
+
+</body>
+
+</html>

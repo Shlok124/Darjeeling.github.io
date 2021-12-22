@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html>
+<!--*********************Head***********************-->
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<!--*********************CSS***********************-->
+<style>
+/*.....................body......................*/
+
+body{
+margin:0;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+/*.....................header......................*/
+
+/*.....................navigation bar......................*/
+.nav{
+border-top:15px groove #4E4941;
+border-bottom:15px ridge #4E4941;
+border-left: 4px solid black;
+border-right: 4px solid black;
+}
+
+.nav ul{
+list-style:none;
+}
+
+.nav li{
+display:inline-block;padding:20px;
+}
+
+.nav li a{
+color:black;
+}
+
+/*.....................background......................*/
+.bannerContainer img{
+width:100%;
+height:400px;
+}
+
+.bannerContainer{
+position:relative;
+}
+
+.bannertext{
+text-align:center;
+color:white;
+background:rgba(11, 0, 51, 0.5);
+width:325px;
+height:150;
+position:absolute;
+bottom:100px;
+left:300px;
+}
+
+/*.....................main......................*/
+
+.main{
+padding:20px;
+}
+
+.places{
+max-width:90%;
+margin:0 auto;
+padding:10px 0 60px 0;
+text-align:center;
+border-bottom:2px dotted black;
+}
+
+.placesshadow{
+display:inline-block;
+box-shadow:0 6px 8px black,0 6px 20px black;
+margin-right:70px;
+width:25%;
+font-size:15px;
+}
+
+.todo{
+max-width:90%;
+margin:0 auto;
+padding:10px 0 60px 0;
+text-align:center;
+border-bottom:2px dotted black;
+}
+
+.todoImg{
+display:inline-block;
+height:200px;
+width:200px;
+}
+.todoImg img{
+height:100%;
+width:100%;
+
+
+}
+.eateries{
+max-width:90%;
+margin:0 auto;
+padding:10px 0 60px 0;
+text-align:center;
+}
+
+.eatshadow img{
+height:100%;
+width:100%;
+border-radius:100px;
+}
+
+.eatshadow{
+display:inline-block;
+height:200px;
+width:200px;
+border:solid 1px #555;
+box-shadow:10px 10px 5px grey;
+border-radius:100px;
+text-align:center;
+margin-right:70px;
+}
+
+footer{
+background:lightgrey
+}
+
+.subscribe{
+display:inline-block;
+width:30%;
+padding:20px;
+}
+
+.links{
+display:inline-block;
+width:50%;
+text-align:center;
+padding-top:30px;
+}
+
+.links ul{
+word-spacing:40px;
+list-style:none;
+}
+.links li a{
+color:black;
+}
+.copy{
+padding:20px;
+}
+
+input[type = email]
+{
+background:grey;
+width:70%;
+padding:12px;
+border:1px solid #ccc;
+}
+
+input[type = SUBMIT]
+{
+background:#2E3338;
+color:white;
+border-left:none;
+border-right:none;
+border-top:none;
+border-bottom:2px solid black;
+cursor:pointer;
+padding:8px 10px;
+font-size:20px;
+}
+
+</style>
+</head>
+
+<!--*********************Body***********************-->
+<body>
+<!--**************** position relative absolute ******************** -->
+
+<header>
+<!--*********************navigation***********************-->
+<section class="nav">
+<ul>
+<li> <a href="index.html">Home</a> </li>
+<li> <a href="places.html">Places to visi</a>t </li>
+<li> <a href="activities.html">Things to do</a> </li>
+<li> <a href="eatery.html">Eateries</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+
+</ul>
+</section>
+
+</header>
+<!--*********************main***********************-->
+<main>
+<!--*********************banner***********************-->
+<section class="bannerContainer">
+<img src ="DarjeelingCollage.jpg"/>
+
+	<section class="bannertext">
+	<h2> Let's Explore Darjeeling </h2>
+
+	</section>
+
+</section>
+<!--*********************main section***********************-->
+<div class="main">
+
+<!--*********************places***********************-->
+
+<section class="places">
+
+<h2 style="text-align:left;">Top 3 Places</h2>
+
+<!--*********************places image 1***********************-->
+
+<section class="placesshadow">
+<img src="ropeway.jpg" alt="ropeway" width="100%">
+
+<section class=placestext">
+<h2> Rope Way </h2>
+</section>
+
+</section>
+
+<!--*********************places image 2***********************-->
+
+<section class="placesshadow">
+<img src="station.jpg" alt="toytrain" width="100%">
+
+<section class=placestext">
+<h2> Toy Train </h2>
+</section>
+
+</section>
+
+<!--*********************places image 3***********************-->
+
+<section class="placesshadow">
+<img src="peacepagoda.jpg" alt="peacepagoda" width="100%">
+
+<section class=placestext">
+<h2> Peace Pagoda </h2>
+</section>
+
+</section>
+
+</section>
+
+<!--*********************things to do***********************-->
+
+<section class="todo">
+<h2 style="text-align:left;">Things To Do</h2>
+<!--*********************things to do 1***********************-->
+<section class = "todoImg">
+<img src="himalayan_mountaineering_institute.jpg" alt="Himalyan Mountaineering Institute">
+<div> Himalyan Mountaineering Institute </div>
+</section>
+
+<!--*********************eateries image 1***********************-->
+<section class = "todoImg">
+<img src="tiger_hill.jpg" alt="Tiger Hill"> <br> <br> 
+<div> &nbsp;&nbsp;&nbsp;&nbsp;Tiger Hill </div>
+</section>
+
+<!--*********************eateries image 1***********************-->
+<section class = "todoImg">
+<img src="chowrasta.jpg" alt="Chowrasta"> <br> <br>
+<div> Chowrasta </div>
+</section>
+
+</section>
+
+<!--*********************eateries***********************-->
+<section class="eateries">
+
+<h2 style="text-align:left;">Eat Here</h2>
+
+<!--*********************eateries image 1***********************-->
+<section class="eatshadow">
+<img src="glenarys.jpg" alt="Glenarys">
+<br>
+<br>
+<div> Glenarys </div>
+</section>
+
+
+<!--*********************eateries image 2***********************-->
+<section class="eatshadow">
+<img src="kunga.jpg" alt="Kunga">
+<br>
+<br>
+<div> Kunga </div>
+</section>
+
+<!--*********************eateries image 3***********************-->
+<section class="eatshadow">
+<img src="nepalichulo.jpg" alt="Nepali Chulo">
+<br>
+<br>
+<div> Nepali Chulo </div>
+</section>
+
+</section>
+
+</div>
+</main>
+<!--****************footer******************** -->
+
+
+<footer>
+<section class="subscribe">
+<form name="newsletter" action="" method="POST">
+<label>Join Our News Letter
+<input name="entry."type="email" required placeholder="me@example.com">
+</label>
+<input type="SUBMIT" onclick="return check (this.form)" value="join">
+</form>
+</section>
+
+<section class="links">
+<ul style="line-height:2;">
+
+<li> <a href="contact.html">Contact</a> </li>
+<li> <a href="places.html">Attractions</a> </li>
+<li> <a href="activities.html">Activities</a> </li>
+<li> <a href="eatery.html">Eateries</a> </li>
+
+</ul>
+</section>
+
+<section class="copy">
+&copy;Shlok 2021
+</section>
+
+</footer>
+
+</body>
+
+</html>
